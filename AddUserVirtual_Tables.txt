@@ -2,3 +2,13 @@ INSERT INTO `mailserver`.`virtual_users`
   (`domain_id`, `password` , `email`)
 VALUES
   ('5', ENCRYPT('newpassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))) , 'email3@newdomain.com');
+  
+  
+  
+  
+  #adding an alias to mailserver`
+  
+  INSERT INTO `mailserver`.`virtual_aliases`
+  (`domain_id`, `source`, `destination`)
+VALUES
+  ('5', 'alias@newdomain.com', 'myemail@gmail.com');
