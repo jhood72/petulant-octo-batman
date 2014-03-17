@@ -1,0 +1,4 @@
+INSERT INTO `mailserver`.`virtual_users`
+  (`domain_id`, `password` , `email`)
+VALUES
+  ('5', ENCRYPT('newpassword', CONCAT('$6$', SUBSTRING(SHA(RAND()), -16))) , 'email3@newdomain.com');
