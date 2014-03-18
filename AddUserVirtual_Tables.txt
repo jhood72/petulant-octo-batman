@@ -16,6 +16,6 @@ VALUES
   
   \*next we will change the password of one of the virtual_users */
   
-  
+  #Need to make sure we have a script to change the passwords of virtual users.
   
   
